@@ -3,8 +3,9 @@ from  Face_Embeddings import faces_embeddings
 from numpy import savez_compressed 
 from face_classfication_model import train_SVM
 from numpy import load
+import numpy as  np  
 
-# load train dataset
+#load train dataset
 trainX, trainy = load_dataset('train/')
 print(trainX.shape, trainy.shape)
 # load test dataset

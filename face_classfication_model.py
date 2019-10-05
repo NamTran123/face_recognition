@@ -4,7 +4,12 @@ from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import Normalizer
 from sklearn.svm import SVC
-
+import matplotlib.pyplot   as  plt 
+import numpy as   np
+import warnings
+import  pickle
+from sklearn.externals import joblib 
+warnings.filterwarnings("ignore")
 
 def train_SVM(data):
     trainX, trainy, testX, testy = data['arr_0'], data['arr_1'], data['arr_2'], data['arr_3']
@@ -24,8 +29,12 @@ def train_SVM(data):
     # fit model
     model = SVC(kernel='linear', probability=True)
     model.fit(trainX, trainy)
+    # Save the trained model as a pickle string. 
+    joblib.dump(model, 'model.pkl')
+    print ("Load model !")
 
-
+    # Load the model from the file 
+    model = joblib.load('model.pkl')   
     # predict
     yhat_train = model.predict(trainX)
     yhat_test = model.predict(testX)

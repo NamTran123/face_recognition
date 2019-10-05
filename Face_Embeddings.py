@@ -3,7 +3,7 @@ from numpy import load
 from numpy import expand_dims
 from numpy import asarray
 from numpy import savez_compressed
-from keras.models import load_model
+from tensorflow.keras.models import load_model
  
 # get the face embedding for one face
 def get_embedding(model, face_pixels):
