@@ -24,8 +24,8 @@ We are using SVM .
 
 `python3 main.py`
 
-The photos of each individual should be stored in a folder TRAIN inside the train folder.
-Test images are stored in text folder.
+The photos of each individual should be stored in a folder train inside the `train` folder .
+Test images are stored in `test` folder.
 
 The application is built over 3 files. 
   1. data_processing.py - Load  file and  Create train ,test   
