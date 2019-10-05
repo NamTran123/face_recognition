@@ -1,4 +1,4 @@
-from face_detect import  load_faces , load_dataset
+from data_processing.py import  load_faces , load_dataset
 from  Face_Embeddings import faces_embeddings
 from numpy import savez_compressed 
 from face_classfication_model import train_SVM
