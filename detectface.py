@@ -30,7 +30,7 @@ def extract_face(filename, required_size=(160, 160)):
 	return face_array
  
 # specify folder to plot
-folder = '5-celebrity-faces-dataset/train/ben_afflek/'
+folder = 'train/ben_afflek/'
 i = 1
 # enumerate files
 for filename in listdir(folder):
