@@ -8,10 +8,10 @@ There are 2 parts in a face recognition system.
   2. Face Recognition - To recognize face of  persons in the images using  SVM.
   
 ## 1. Face_Embeddings.
-Face_Embeddings using facenet .
+Face embeddings using facenet .
 
 ## 2. Face Recognition
-We are using SVM .
+I using SVM .
 
 ## Requirements
 1. [Python 3.6.x](https://www.python.org/downloads/)
@@ -30,4 +30,4 @@ Test images are stored in `test` folder.
 The application is built over 3 files. 
   1. data_processing.py - Load  file and  Create train ,test   
   2. face_embeddings  - Detect face and extract feature face embeddings using facenet.
-  3. face_classfication_model.py - To  classfication  face  for face recognition  using svm .
+  3. face_classification_model.py - To  classification  face  for face recognition  using svm .
